@@ -1,0 +1,94 @@
+header {
+  display: flex;
+  height: 60px;
+  padding: 1rem 8%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f1117;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  color: white;
+  transition: all 0.3s ease;
+}
+header.active {
+  height: 60px;
+  padding: 0.5rem 9%;
+  background-color: #0f1117e0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo h1 {
+  padding: 0;
+  margin: 0;
+  color: #fb923c;
+}
+
+header nav {
+  display: flex;
+  margin-left: 1rem;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.menu-togle {
+  display: none;
+  width: 20px;
+  height: 20px;
+  /* background-color: beige; */
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-togle span {
+  height: 2px;
+  width: 100%;
+  background-color: #fb923c;
+  transition: all 0.3s ease;
+}
+
+.menu-togle.active span:nth-child(1) {
+  transform-origin: 0 0;
+  transform: rotate(45deg);
+}
+.menu-togle.active span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+.menu-togle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(114, 113, 113);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #fb923cda;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+nav a:hover {
+  color: #fb923c;
+}

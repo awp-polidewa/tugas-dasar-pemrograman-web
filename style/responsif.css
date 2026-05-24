@@ -1,0 +1,41 @@
+/* Tablet */
+@media (max-width: 768px) {
+  .menu-togle {
+    display: flex;
+  }
+  nav {
+    position: fixed;
+    transition: all 0.3s ease-in;
+    width: 300px;
+    height: 100vh;
+    bottom: 0;
+    background-color: #1b1d22;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    top: 60px;
+    transform: translateX(100%);
+    z-index: 99;
+  }
+  nav a {
+    color: rgba(255, 255, 255, 0.568);
+  }
+  nav.active {
+    transform: translateX(0%);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container #list {
+    font-size: 0.8rem;
+  }
+  .container h1 {
+    font-size: 1.4rem;
+  }
+  .container .addTask {
+    font-size: 0.7rem;
+  }
+}

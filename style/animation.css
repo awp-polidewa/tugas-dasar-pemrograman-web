@@ -1,0 +1,63 @@
+.from-left {
+  animation: fromLeft 1s ease;
+}
+
+@keyframes fromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.from-right {
+  animation: fromRight 1s ease;
+}
+
+@keyframes fromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.from-top {
+  animation: fromTop 1s ease;
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.from-bottom {
+  animation: fromBottom 1s ease;
+}
+
+@keyframes fromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
