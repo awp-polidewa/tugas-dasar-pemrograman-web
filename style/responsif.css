@@ -7,7 +7,7 @@
     position: fixed;
     transition: all 0.3s ease-in;
     width: 300px;
-    height: 100vh;
+    height: 100dvh;
     bottom: 0;
     background-color: #1b1d22;
     right: 0;
